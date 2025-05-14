@@ -1,6 +1,6 @@
 body{
-    height: 5000px;
     overflow-x: hidden;
+    margin: 0 auto !important; 
 }
 
 .bg-img{
@@ -8,6 +8,11 @@ body{
     max-width: 100%;
     width: 100%;
 
+}
+
+.logo-img {
+  height: 10vh;
+  
 }
 
 .navbar {
@@ -18,7 +23,7 @@ body{
     border-bottom: 0.3vh solid rgb(139, 139, 34) !important;
     background-color: white !important;
     border-color: rgb(139, 139, 34) !important;
-    height: 17vh !important;
+    height: 15vh;
 }
 
 .navbar-toggler-icon {
@@ -62,8 +67,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   /* Close button positioning */
   #closeMenu.close-btn {
     position: absolute;
-    top: 10px;
-    right: 16px;
+    top: 2%;
+    right: 3%;
     z-index: 1060;
    background-color: transparent !important;
    border: none;
@@ -77,11 +82,17 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   color: rgb(180, 180, 113) !important;
   text-decoration: underline;
   text-decoration-color: rgb(180, 180, 113);
-  margin-top: 15vh !important;
+  margin-top: 10vh !important;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 7vw !important;
+}
+
+@media screen and (min-width: 800px){
+  .header-font{
+    font-size: 3.3vw !important;
+  }
 }
   
 .timer {
@@ -92,16 +103,29 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   color: rgb(180, 180, 113);
 }
 
+
 .time-section {
   justify-content: center;
   font-size: 12vw;
 }
 
+@media screen and (min-width: 800px){
+.time-font {
+  font-size: 8vw !important;
+}
+}
+
 .label {
-  font-size: 5vw;
+  font-size: 6vw;
   margin-top: 10vh;
   color: rgb(180, 180, 113);
   
+}
+
+@media screen and (min-width: 800px){
+  .label-font{
+    font-size: 4vw;
+  }
 }
 
 .time-section {
@@ -112,72 +136,102 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 .invitation{
   width: 80vw;
-  
-  background-color: rgb(180, 180, 113);
+  background-color: rgb(247, 244, 242);
   border: white solid 1%;
   justify-self: center;
-  border-radius: 7%;
+  border-radius: 3%;
+}
+
+@media screen and (min-width: 800px){
+  .invit{
+    width: 60vw !important;
+  }
 }
 
 .first-paragraph {
   font-size: 6vw;
-  color: white;
+  color: rgb(180, 180, 113);
   text-align: center;
-  font-family: "Zen Kurenaido", sans-serif;
+ font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
+  
 }
+
 
 .invited{
   font-size: 6vw;
-  color: white;
+  color: rgb(180, 180, 113);
   text-align: center;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
+}
+
+@media screen and (min-width: 800px){
+  .inv-par{
+    font-size: 3vw !important;
+  }
 }
 
 .names{
-  font-size: 9vw;
-  color: white;
+  font-size: 7vw;
+  color: rgb(180, 180, 113);
   text-align: center;
   font-family: "Zen Kurenaido", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: italic;
 }
 
+
+
 .hd-parents{
   font-size: 7vw;
-  color: white;
+  color: rgb(180, 180, 113);
   text-align: center;
   font-family: "Zen Kurenaido", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: italic;
   text-decoration: underline;
   text-decoration-color: white;
 }
 
+@media screen and (min-width: 800px){
+  .hdnames-font {
+    font-size: 4vw !important;
+  }
+}
+
 .parents-names{
-  font-size: 3.5vw;
-  color: white;
+  font-size: 4vw;
+  color: rgb(180, 180, 113);
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
   margin-left: 1vw;
   margin-right: 1vw;
+  text-align: center;
 }
 
 .bestman{
   font-size: 4vw;
-  color: white;
+  color: rgb(180, 180, 113);
   text-align: center;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
+@media screen and (min-width: 800px){
+  .names-font{
+    font-size: 2vw !important;
+    width: 60vw !important;
+    margin: auto;
+  }
+}
+
 .nav-link{
-  font-size: 7vw !important;
+  font-size: 4vw !important;
   color: white;
   margin-left: 10vw;
   font-family: "Zen Kurenaido", sans-serif;
@@ -185,6 +239,11 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   font-style: italic;
 }
 
+@media screen and (min-width: 800px){
+  .hd-links{
+    font-size: 2vw !important;
+  }
+}
 .page-top{
   font-size: 12vw !important;
   color: white;
@@ -192,4 +251,76 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
+}
+
+@media screen and (min-width: 800px){
+  .pg-top {
+    font-size: 3vw !important;
+  }
+}
+
+.church-img{
+  width: 80vw;
+  justify-self: center;
+
+}
+
+@media screen and (min-width: 800px){
+  .ch-img {
+    width: 60vw !important;
+    display: block;
+  margin: auto;
+    height: 90vh;
+  }
+}
+.church-p {
+  color: rgb(139, 139, 34);
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 0.3vh solid rgb(139, 139, 34) !important;
+  padding-bottom: 1vh;
+  width: 80vw;
+  font-size: 4vw;
+}
+
+
+
+.map{
+  height: 50vh;
+  justify-content: center;
+  margin-top: 4vh;
+  border-radius: 3%;
+ 
+}
+
+.church-map{
+  width: 80vw;
+  justify-self: center !important;
+}
+
+.link-p{
+  color: rgb(139, 139, 34) !important;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: inherit;
+  padding-bottom: 1vh;
+  width: 80vw;
+  font-size: 4vw;
+}
+
+.ship-img{
+  width: 80vw;
+  justify-self: center;
+  height: 20vh;
+}
+
+@media screen and (min-width: 800px){
+  .sh-img{
+    width: 60vw !important;
+    display: block;
+    margin: auto;
+    height: 30vh;
+  }
 }

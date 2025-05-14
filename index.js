@@ -97,3 +97,28 @@ function updateCountdown() {
 // Update every minute
 updateCountdown();
 setInterval(updateCountdown, 60000);
+
+
+
+const map = L.map('churchmap').setView([40.694704,24.554991], 17);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+L.marker([40.694704,24.554991])
+  .addTo(map)
+  .bindPopup('Ιερός Ναός Αγίου Δημητρίου, Καλιράχη')
+  
+
+
+const emap = L.map('eventmap').setView([40.6921582,24.5259740], 17);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors'
+}).addTo(emap);
+
+L.marker([40.6921582,24.5259740])
+  .addTo(emap)
+  .bindPopup('Το παλαιό Κλίσμα')
+  
