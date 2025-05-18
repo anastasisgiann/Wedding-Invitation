@@ -149,8 +149,43 @@
         <div class="music-p text-center names-font">
           <p>Παρακάτω προεραιτικά πληκτρολογήστε ενα τραγούδι που θα θέλατε να ακούσετε στο γλέντι μας!</p>
         </div>  
-        <input type="textarea" class="payment-med input-med music-inpt" placeholder="Τίτλος τραγουδιού">
-        <button class="btn music-btn btn-med" type="submit" id="button-addon2"><i class="bi-arrow-90deg-right"></i></button>
+        <div id="music_form" class="music-sec">
+          <input id="input_music" type="textarea" class="payment-med input-med music-inpt" placeholder="Τίτλος τραγουδιού" aria-label="Recipient's username" >
+          <button class="btn music-btn btn-med" type="submit" id="button-addon2"><i class="bi-arrow-90deg-right"></i></button>
+          <script>
+            const form = document.getElementById('button-addon2');
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyYmxKF2_NRJTUlkY6W1vMyK_VSIPXBZIYZn9ZneOgsYLrjvRYRsYH-q9cMdEOQiXhyGw/exec'; // Replace with your Google Apps Script Web App URL
+              // Add an event listener to the form submission
+            form.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                const data = {};
+                data["name"] = "[KALESMENOS]";
+                const responseMessage = document.getElementById('input_music');
+                data["message"] = responseMessage.value;
+
+                fetch(scriptURL, {
+                    method: 'POST',
+                    contentType: 'application/json',
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.text())
+                .then(result => {
+                    responseMessage.textContent = 'Form submitted successfully!';
+                    form.reset();
+                })
+                .catch(error => {
+                    responseMessage.textContent = 'Error submitting form. Please try again.';
+                });
+                 // Get the div element by its ID
+                var divvv = document.getElementById('music_form');
+
+                // Change the content of the div
+                divvv.innerHTML = '<div class="music-p text-center names-font"><p>Ευχαριστούμε!</p></div>';
+            });
+          </script>
+        </div>
       </div>
     </section>
     <section>
