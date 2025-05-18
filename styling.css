@@ -440,7 +440,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 }
 
 .music-inpt{
-  width: 60vw;
+  width: 65vw;
   margin: 0 auto;
   border:0.2vw solid rgb(180, 180, 113) ;
   border-radius: 2vw;
@@ -459,7 +459,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 }
 
 .music-btn {
-  width: 20vw;
+  width: 15vw;
   margin: 0 auto;
   background-color:rgb(180, 180, 113) !important;
   color: white !important;
@@ -470,6 +470,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     width: 45vw !important;
     border:0.1vw solid rgb(180, 180, 113) !important;
     border-radius: 0.5vw !important;
+    font-size: 1vw !important;
   }
 }
 
@@ -485,7 +486,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 ::placeholder{
   color: rgb(180, 180, 113) ;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .music-p{
@@ -493,4 +494,29 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
+}
+@media screen and (min-width: 800px){
+::placeholder{
+  
+  font-size: 1.2vw !important;
+  }
+}
+
+.footer{
+   border-top: 0.3vh solid rgb(139, 139, 34) !important;
+   font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 4vw !important;
+  color: rgb(180, 180, 113);
+  margin-top: 10vh;
+  text-align: center;
+  height: 6vh;
+  padding-top: 1vh;
+}
+
+@media screen and (min-width: 800px){
+.footer{
+  font-size: 1.5vw !important;
+  }
 }
