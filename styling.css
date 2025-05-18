@@ -79,14 +79,13 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 .countdown-header {
   text-align: center !important;
-  color: rgb(180, 180, 113) !important;
-  text-decoration: underline;
-  text-decoration-color: rgb(180, 180, 113);
+  color: rgb(182, 182, 111) !important;
   margin-top: 10vh !important;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 7vw !important;
+  margin-bottom: 4vh;
 }
 
 @media screen and (min-width: 800px){
@@ -100,13 +99,17 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   justify-content: center;
   gap: 40px;
   margin-top: 10vh;
-  color: rgb(180, 180, 113);
+  color: rgb(119, 119, 60);
 }
 
 
 .time-section {
   justify-content: center;
-  font-size: 12vw;
+  font-size: 14vw;
+   font-family: "Aguafina Script", cursive;
+  font-weight: 700;
+  font-style: normal;
+  
 }
 
 @media screen and (min-width: 800px){
@@ -118,7 +121,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .label {
   font-size: 6vw;
   margin-top: 10vh;
-  color: rgb(180, 180, 113);
+  color: rgb(119, 119, 60);
   
 }
 
@@ -128,11 +131,6 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   }
 }
 
-.time-section {
-  font-family: "Zen Kurenaido", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 .invitation{
   width: 80vw;
@@ -140,17 +138,30 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   border: white solid 1%;
   justify-self: center;
   border-radius: 3%;
+  position: relative;
+  isolation: isolate;
+}
+
+.invitation::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .2;
+  background-image: url(olivetree.png);
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 800px){
   .invit{
-    width: 60vw !important;
+    width: 50vw !important;
   }
 }
 
 .first-paragraph {
   font-size: 6vw;
-  color: rgb(180, 180, 113);
+  color: olive;
   text-align: center;
  font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
@@ -161,7 +172,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 .invited{
   font-size: 6vw;
-  color: rgb(180, 180, 113);
+  color: olive;
   text-align: center;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
@@ -176,7 +187,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 .names{
   font-size: 7vw;
-  color: rgb(180, 180, 113);
+  color: olive;
   text-align: center;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 600;
@@ -187,7 +198,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 .hd-parents{
   font-size: 7vw;
-  color: rgb(180, 180, 113);
+  color: olive;
   text-align: center;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 600;
@@ -204,7 +215,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 .parents-names{
   font-size: 4vw;
-  color: rgb(180, 180, 113);
+  color: olive;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -215,7 +226,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 .bestman{
   font-size: 4vw;
-  color: rgb(180, 180, 113);
+  color: olive;
   text-align: center;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
@@ -224,8 +235,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 @media screen and (min-width: 800px){
   .names-font{
-    font-size: 2vw !important;
-    width: 60vw !important;
+    font-size: 1.5vw !important;
+    width: 50vw !important;
     margin: auto;
   }
 }
@@ -267,19 +278,19 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 @media screen and (min-width: 800px){
   .ch-img {
-    width: 60vw !important;
+    width: 50vw !important;
     display: block;
   margin: auto;
     height: 90vh;
   }
 }
 .church-p {
-  color: rgb(139, 139, 34);
+  color: rgb(180, 180, 113);
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
   border-bottom: 0.3vh solid rgb(139, 139, 34) !important;
-  padding-bottom: 1vh;
+ 
   width: 80vw;
   font-size: 4vw;
 }
@@ -289,7 +300,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .map{
   height: 50vh;
   justify-content: center;
-  margin-top: 4vh;
+  margin-top: 3vh;
   border-radius: 3%;
  
 }
@@ -304,23 +315,182 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
-  text-decoration: inherit;
+  text-decoration: inherit !important;
   padding-bottom: 1vh;
   width: 80vw;
   font-size: 4vw;
+
 }
 
 .ship-img{
   width: 80vw;
   justify-self: center;
-  height: 20vh;
+  height: 15vh;
 }
 
 @media screen and (min-width: 800px){
   .sh-img{
-    width: 60vw !important;
+    width: 50vw !important;
     display: block;
     margin: auto;
-    height: 30vh;
+    height: 35vh;
   }
+}
+.ship-p{
+  border-top: 0.3vh solid rgb(139, 139, 34) !important;
+  margin-top: 3vh;
+  padding-top: 1vh;
+}
+
+.payment-brd{
+  border-top: 0.3vh solid rgb(139, 139, 34) !important;
+  border-bottom: 0.3vh solid rgb(139, 139, 34) !important;
+   border-radius: 4%;
+   width: 80vw;
+   margin: 0 auto;
+   margin-top: 3vh;
+}
+
+.payment-sec{
+  width: 80vw;
+   border-bottom: 0.3vh solid rgb(180, 180, 113) !important;
+   margin: 0 auto;
+   margin-top: 1vh;
+   
+  
+}
+
+.payment-hd{
+  color: rgb(139, 139, 34) !important;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 5vw;
+  text-align: center;
+
+}
+
+.payment-p{
+  color: rgb(139, 139, 34) !important;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3vw;
+  text-align: center;
+  
+}
+
+@media screen and (min-width: 800px){
+  .payment-med{
+    width: 50vw !important;
+
+  }
+}
+@media screen and (min-width: 800px){
+  .payment-pmed{
+    font-size: 1vw !important;
+  }
+}
+
+
+@media screen and (min-width: 800px){
+  .payment-hdmed{
+    font-size: 2vw !important;
+  }
+}
+
+.gift-header{
+  text-align: center !important;
+  color: rgb(180, 180, 113) !important;
+  margin-top: 10vh !important;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 5vw !important;
+  margin-bottom: 4vh;
+}
+
+@media screen and (min-width: 800px){
+  .header-gift{
+    font-size: 2.2vw !important;
+  }
+}
+
+.gift-img{
+  width: 80vw;
+  justify-self: center;
+  height: 15vh;
+}
+
+@media screen and (min-width: 800px){
+  .gi-img{
+    width: 50vw !important;
+    display: block;
+    margin: auto;
+    height: 35vh;
+  }
+}
+
+.music-sec{
+  width: 80vw;
+  margin: 0 auto;
+   display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.music-inpt{
+  width: 60vw;
+  margin: 0 auto;
+  border:0.2vw solid rgb(180, 180, 113) ;
+  border-radius: 2vw;
+  height: 4vh;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(180, 180, 113) ;
+}
+
+.music-inpt:focus {
+  outline: none;
+  background-color: antiquewhite;
+  border-color:rgb(105, 105, 22) ;
+  
+}
+
+.music-btn {
+  width: 20vw;
+  margin: 0 auto;
+  background-color:rgb(180, 180, 113) !important;
+  color: white !important;
+}
+
+@media screen and (min-width: 800px){
+  .input-med{
+    width: 45vw !important;
+    border:0.1vw solid rgb(180, 180, 113) !important;
+    border-radius: 0.5vw !important;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .btn-med{
+    width: 5vw !important;
+  }
+}
+
+.music-btn:hover {
+  background-color:rgb(105, 105, 22) !important;
+}
+
+::placeholder{
+  color: rgb(180, 180, 113) ;
+  font-size: 3vw;
+}
+
+.music-p{
+  color: rgb(180, 180, 113);
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }

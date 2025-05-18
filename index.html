@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OurGymSKG</title>
+    <title>Ηλιας&Καλλιοπη</title>
      <link
     rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="styling.css">
@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Bangers&family=Lugrasimo&family=Pinyon+Script&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
 <script
     src="https://unpkg.com/leaflet/dist/leaflet.js"
   ></script>   
@@ -40,8 +41,14 @@
                   <a class="nav-link text-white hd-links" href="#invitation">ΠΡΟΣΚΛΗΣΗ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white hd-links" href="#">ΤΟΠΟΘΕΣΙΑ ΜΥΣΤΗΡΙΟΥ</a>
+                  <a class="nav-link text-white hd-links" href="#church-sec">ΤΟΠΟΘΕΣΙΑ ΤΕΛΕΤΗΣ</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link text-white hd-links" href="#party-sec">ΓΛΕΝΤΙ ΜΕΤΕΠΕΙΤΑ ΤΕΛΕΤΗΣ</a>
                 </li>        
+                <li class="nav-item">
+                  <a class="nav-link text-white hd-links" href="#ship-sec">ΑΚΤΟΠΛΟΙΚΑ</a>
+                </li>               
               </ul>
             </div>
           </div>
@@ -54,7 +61,7 @@
       
     <section id="countdown-section">
       <div>
-        <header class="countdown-header header-font h1">    ΜΕΤΡΑΜΕ ΑΝΤΙΣΤΡΟΦΑ  </header>
+        <header class="countdown-header header-font h1">    Μετραμε Αντίστροφα  </header>
         <div class="timer">
           <div class="time-section time-font">
             <div id="days">00</div>
@@ -73,11 +80,11 @@
     </section>
     <section id="invitation"> 
       <div>
-        <header class="countdown-header header-font">ΠΡΟΣΚΛΗΣΗ</header>
+        <header class="countdown-header header-font">Πρόσκληση</header>
       </div>
       <div class="invitation invit">
-        <p class="names hdnames-font">Ηλιας & Καλλιοπη</p>
-        <p class="first-paragraph inv-par">Με μεγάλη χαρά σας προσκαλουμε στον Γάμο μας, που θα πραγματοποιηθεί στις 27 Σεπτεμβρίου 2025, ώρα 16:30 στον Ι.Ν Αγίου Δημητρίου στην Καλλιράχη Θάσου. </p>
+        <p class="names hdnames-font">Ηλίας & Καλλιόπη</p>
+        <p class="first-paragraph inv-par">Με μεγάλη χαρά σας προσκαλούμε στον Γάμο μας, που θα πραγματοποιηθεί στις 27 Σεπτεμβρίου 2025, ώρα 16:30 στον Ι.Ν Αγίου Δημητρίου στην Καλλιράχη Θάσου. </p>
         <p class="invited inv-par"> [καλεσμενος] </p>
   
         <p class="hd-parents hdnames-font"> ΟΙ ΓΟΝΕΙΣ</p>
@@ -86,8 +93,8 @@
         <p class="bestman names-font">ΜΠΑΓΙΟΠΟΥΛΟΣ ΗΛΙΑΣ<br>ΤΕΡΖΟΠΟΥΛΟΥ ΣΟΥΖΑΝΑ</p>
       </div>
     </section>
-    <section class="justify-content-center">
-       <header class="countdown-header header-font">ΤΟΠΟΘΕΣΙΑ ΤΕΛΕΤΗΣ</header>
+    <section class="justify-content-center" id="church-sec">
+       <header class="countdown-header header-font">Τοποθεσία τελετής</header>
       <div class="church-map">
         <img src="church.jpg" class="rounded church-img ch-img" alt="Ιερος Ναος Αγιου Δημητριου" >
         <div class="church-p text-center names-font">
@@ -99,12 +106,12 @@
         </div>  
       </div>
     </section>
-    <section class="justify-content-center">
-       <header class="countdown-header header-font">ΓΛΕΝΤΙ ΜΕΤΕΠΕΙΤΑ ΤΕΛΕΤΗΣ</header>
+    <section id="party-sec">
+       <header class="countdown-header header-font">Γλέντι μετέπειτα τελετής</header>
       <div class="church-map">
-        <img src="palioklisma.jpg" class="rounded church-img ch-img" alt="Το παλαιό κλίσμα" >
+        <img src="palioklisma.jpg" class="rounded church-img ch-img" alt="Το παλιό κλίσμα" >
         <div class="church-p text-center names-font">
-          <p>Το παλαιό Κλίσμα</p>
+          <p>Το παλιό Κλίσμα</p>
         </div>  
           <div id="eventmap" class="map ch-img"></div>
           <div class="link-p text-center names-font">
@@ -112,12 +119,39 @@
         </div>  
       </div>
     </section>
-    <section class="justify-content-center">
-       <header class="countdown-header header-font">ΑΚΤΟΠΛΟΙΚΑ</header>
+    <section id="ship-sec">
+       <header class="countdown-header header-font">Ακτοπλοικά</header>
       <div class="church-map">
         <img src="cartoonship.png" class="rounded ship-img sh-img" alt="Ζωγραφια πλοίου" >
-        <div class="link-p text-center names-font">
-          <a class="link-p names-font" href="https://www.go-thassos.gr/gr/thassos-ferry-schedules-prices">Πατηστε εδω για να δειτε τιμες/ωρες για τα δρομολόγια των πλοίων από Καβάλα και Κεραμωτή</a>
+        <div class="ship-p text-center names-font">
+          <a class="link-p names-font" href="https://dromologia-kavalas-thasou.blogspot.com/?m=1">Πατηστε εδω για να δειτε τιμες/ωρες για τα δρομολόγια των πλοίων από Καβάλα για Πρίνο και από Κεραμωτή για Λιμένα</a>
         </div>  
+      </div>  
+    </section>
+    <section id="gift-sec">
+      <header class="gift-header header-gift">Προεραιτική λίστα δώρου</header>
+      <div class="church-map">
+        <img src="gift.png" class="rounded gift-img gi-img" alt="Ζωγραφια πλοίου">
+      <div class="payment-brd payment-med">
+        <div class="payment-sec justify-content-center payment-med">
+          <p class="payment-hd payment-hdmed">Eurobank</p>
+          <p class="payment-p payment-pmed">GR4502607010000780101338039</p>
+        </div>
+        <div class=" justify-content-center payment-med">
+          <p class="payment-hd payment-hdmed">IRIS</p>
+          <p class="payment-p payment-pmed">6942522288</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <header class="countdown-header header-font">Μουσική</header>
+      <div class="music-sec payment-med">
+        <div class="music-p text-center names-font">
+          <p>Παρακάτω προεραιτικά πληκτρολογήστε ενα τραγούδι που θα θέλατε να ακούσετε στο γλέντι μας!</p>
+        </div>  
+  <input type="textarea" class="payment-med input-med music-inpt" placeholder="Τίτλος τραγουδιού" aria-label="Recipient's username" >
+  <button class="btn music-btn btn-med" type="submit" id="button-addon2">Button</button>
+</div>
+    </section>
   </div>
 </body>
