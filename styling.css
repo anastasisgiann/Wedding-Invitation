@@ -139,6 +139,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
    font-family: "Aguafina Script", cursive;
   font-weight: 700;
   font-style: normal;
+  padding-top: 20vw;
+  padding-bottom: 4vw;
   
 }
 
@@ -147,16 +149,18 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   position: absolute;
   z-index: -1;
   inset: 0;
-  opacity: .2;
-  background-image: url(olivebranch.png);
+  opacity: .4;
+  background-image: url(olivewreath.png);
   background-position: center;
-  background-size: contain;
+  background-size: 100vw 40vh;
   background-repeat: no-repeat;
+  margin-bottom: 15vw;
 }
 
 @media screen and (min-width: 800px){
 .time-font {
   font-size: 8vw !important;
+  padding-top: 2vw !important;
 }
 }
 
