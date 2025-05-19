@@ -32,36 +32,44 @@
               <button id="closeMenu" class="btn btn-light close-btn"><span class="navbar-toggler-icon"></span></button>
               <ul class="navbar-nav">
                 <li class="nav-item h2">
-                  <a class="nav-link text-white page-top pg-top" href="#mainContent">ΑΡΧΙΚΗ</a>
+                  <a class="nav-link text-white page-top pg-top" href="#mainContent">Αρχική</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white hd-links" href="#countdown-section">ΑΝΤΙΣΤΡΟΦΗ ΜΕΤΡΗΣΗ</a>
+                  <a class="nav-link text-white hd-links" href="#countdown-section">Αντίστροφη μέτρηση</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white hd-links" href="#invitation">ΠΡΟΣΚΛΗΣΗ</a>
+                  <a class="nav-link text-white hd-links" href="#invitation">Πρόσκληση</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white hd-links" href="#church-sec">ΤΟΠΟΘΕΣΙΑ ΤΕΛΕΤΗΣ</a>
+                  <a class="nav-link text-white hd-links" href="#church-sec">Τοποθεσία τελετής</a>
                 </li> 
                 <li class="nav-item">
-                  <a class="nav-link text-white hd-links" href="#party-sec">ΓΛΕΝΤΙ ΜΕΤΕΠΕΙΤΑ ΤΕΛΕΤΗΣ</a>
+                  <a class="nav-link text-white hd-links" href="#party-sec">Γλέντι μετέπειτα τελετής</a>
                 </li>        
                 <li class="nav-item">
-                  <a class="nav-link text-white hd-links" href="#ship-sec">ΑΚΤΟΠΛΟΙΚΑ</a>
-                </li>               
+                  <a class="nav-link text-white hd-links" href="#ship-sec">Ακτοπλοικά</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hd-links" href="#gift-sec">Προεραιτική λίστα δώρου</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link text-white hd-links" href="#music-sec">Αίτημα τραγουδιού</a>
+                </li>                                            
               </ul>
             </div>
           </div>
         </div>
       </nav>
   <div id="mainContent">
-    <div class="d-flex justify-content-center">
-          <img src="seaandsand.jpg" alt="bg image" class="bg-img">
-      </div>
+      <section>
+        <div class="container">
+          <img src="seaandsand.jpg" class="bg-img">
+           <div class="firstsec-names firstsec-med"> Ηλίας & Καλλιόπη </div>
+        </div>
       
+      </section>    
     <section id="countdown-section">
-      <div>
-        <header class="countdown-header header-font h1">    Μετραμε Αντίστροφα  </header>
+        <header class="countdown-header header-font h1">    Μετράμε Αντίστροφα  </header>
         <div class="timer">
           <div class="time-section time-font">
             <div id="days">00</div>
@@ -85,7 +93,7 @@
       <div class="invitation invit">
         <p class="names hdnames-font">Ηλίας & Καλλιόπη</p>
         <p class="first-paragraph inv-par">Με μεγάλη χαρά σας προσκαλούμε στον Γάμο μας, που θα πραγματοποιηθεί στις 27 Σεπτεμβρίου 2025, ώρα 16:30 στον Ι.Ν Αγίου Δημητρίου στην Καλλιράχη Θάσου. </p>
-        <p class="invited inv-par"> [καλεσμενος] </p>
+        <p class="invited inv-par" id="ivnited"> καλεσμενος </p>
   
         <p class="hd-parents hdnames-font"> ΟΙ ΓΟΝΕΙΣ</p>
         <p class="parents-names d-flex justify-content-between names-font">ΓΙΑΝΝΟΥΛΙΔΗΣ <br> ΣΤΕΦΑΝΟΣ <br>ΓΙΑΝΝΟΥΛΙΔΟΥ<br> ΑΝΑΣΤΑΣΙΑ<span class="">ΤΖΑΦΕΡΗΣ <br> ΧΡΗΣΤΟΣ <br>ΚΟΥΤΛΟΥΓΙΑΝΝΗ <br>ΤΑΡΣΙΑ</span></p>
@@ -93,7 +101,7 @@
         <p class="bestman names-font">ΜΠΑΓΙΟΠΟΥΛΟΣ ΗΛΙΑΣ<br>ΤΕΡΖΟΠΟΥΛΟΥ ΣΟΥΖΑΝΑ</p>
       </div>
     </section>
-    <section class="justify-content-center" id="church-sec">
+    <section id="church-sec">
        <header class="countdown-header header-font">Τοποθεσία τελετής</header>
       <div class="church-map">
         <img src="church.jpg" class="rounded church-img ch-img" alt="Ιερος Ναος Αγιου Δημητριου" >
@@ -101,7 +109,7 @@
           <p>Ιερός Ναος Αγιου Δημητρίου Καλλιράχη</p>
         </div>  
           <div id="churchmap" class="map ch-img"></div>
-          <div class="link-p text-center names-font">
+        <div class="link-p text-center names-font">
           <a class="link-p names-font" href="https://www.google.com/maps/dir//%CE%9A%CE%B1%CE%BB%CE%BB%CE%B9%CF%81%CE%AC%CF%87%CE%B7+640+10/@40.6942842,24.5446522,3448m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x14aee9940ff449d7:0xae33eb4478f56f0c!2m2!1d24.5548684!2d40.6946104?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D">Πατηστε εδω για οδηγιες</a>
         </div>  
       </div>
@@ -124,7 +132,7 @@
       <div class="church-map">
         <img src="cartoonship.png" class="rounded ship-img sh-img" alt="Ζωγραφια πλοίου" >
         <div class="ship-p text-center names-font">
-          <a class="link-p names-font" href="https://dromologia-kavalas-thasou.blogspot.com/?m=1">Πατηστε εδω για να δειτε τιμες/ωρες για τα δρομολόγια των πλοίων από Καβάλα για Πρίνο και από Κεραμωτή για Λιμένα</a>
+          <a class="link-p names-font" href="https://dromologia-kavalas-thasou.blogspot.com/?m=1">Πατήστε εδώ για να δείτε τιμές/ώρες για τα δρομολόγια των πλοίων από Καβάλα για Πρίνο και από Κεραμωτή για Λιμένα</a>
         </div>  
       </div>  
     </section>
@@ -142,9 +150,10 @@
           <p class="payment-p payment-pmed">6942522288</p>
         </div>
       </div>
+      </div>
     </section>
-    <section>
-      <header class="countdown-header header-font">Μουσική</header>
+    <section id="music-sec">
+      <header class="countdown-header header-font">Αίτημα τραγουδιού</header>
       <div class="music-sec payment-med">
         <div class="music-p text-center names-font">
           <p>Παρακάτω προεραιτικά πληκτρολογήστε ενα τραγούδι που θα θέλατε να ακούσετε στο γλέντι μας!</p>

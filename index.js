@@ -72,7 +72,7 @@ navLinks.forEach(link => {
 
 
 // Set your target date (e.g., June 1, 2025)
-const targetDate = new Date("June 1, 2025 00:00:00").getTime();
+const targetDate = new Date("2025-09-27T16:30:00").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();

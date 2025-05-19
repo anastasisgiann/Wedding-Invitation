@@ -6,8 +6,36 @@ body{
 .bg-img{
     height: 100vh;
     max-width: 100%;
-    width: 100%;
+    width: 100vw;
+    
+}
 
+.container{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative;
+  max-width: 100%  !important; 
+}
+
+
+.firstsec-names{
+  position: absolute;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 7vw;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: olive;
+  font-weight: 600;
+ 
+}
+
+@media screen and (min-width: 800px){
+  .firstsec-med{
+    font-size: 3vw !important;
+  }
 }
 
 .logo-img {
@@ -61,14 +89,14 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     width: 100%;
     z-index: 1050;
     padding-top: 70px;
-    background-color: rgb(180, 180, 113) !important;
+    background-color: rgba(180, 180, 113, 0.985) !important;
   }
   
   /* Close button positioning */
   #closeMenu.close-btn {
     position: absolute;
-    top: 2%;
-    right: 3%;
+    top: 5%;
+    right: 4%;
     z-index: 1060;
    background-color: transparent !important;
    border: none;
@@ -100,6 +128,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   gap: 40px;
   margin-top: 10vh;
   color: rgb(119, 119, 60);
+  position: relative;
+  isolation: isolate;  
 }
 
 
@@ -110,6 +140,18 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   font-weight: 700;
   font-style: normal;
   
+}
+
+.timer::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .2;
+  background-image: url(olivebranch.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 800px){
@@ -242,7 +284,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 }
 
 .nav-link{
-  font-size: 4vw !important;
+  font-size: 5vw !important;
   color: white;
   margin-left: 10vw;
   font-family: "Zen Kurenaido", sans-serif;
@@ -255,6 +297,13 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     font-size: 2vw !important;
   }
 }
+
+.nav-link:hover{
+  background-color: rgb(109, 109, 62) !important;
+  border-radius: 6% !important;
+ 
+}
+
 .page-top{
   font-size: 12vw !important;
   color: white;
@@ -273,7 +322,6 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .church-img{
   width: 80vw;
   justify-self: center;
-
 }
 
 @media screen and (min-width: 800px){
@@ -505,18 +553,33 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .footer{
    border-top: 0.3vh solid rgb(139, 139, 34) !important;
    font-family: "Zen Kurenaido", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: italic;
   font-size: 4vw !important;
   color: rgb(180, 180, 113);
   margin-top: 10vh;
   text-align: center;
-  height: 6vh;
-  padding-top: 1vh;
+  height: 8vh;
+  padding-top: 2vh;
+  position: relative;
+  isolation: isolate;
 }
 
 @media screen and (min-width: 800px){
 .footer{
   font-size: 1.5vw !important;
+
   }
+}
+
+.footer::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .2;
+  background-image: url(oliveleafs.png);
+  background-position: center;
+  background-size:100vw 30vh;
+  background-repeat: no-repeat;
 }
